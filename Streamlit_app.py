@@ -27,7 +27,7 @@ st.title(":wave: Sign Language Classification Model :muscle:")
 
 # Load the pre-trained model
 def load_model():
-    model = tf.keras.models.load_model('best_model.h5')
+    model = tf.keras.models.load_model('vgg_digits_best_model.h5')
     return model
 
 model = load_model()
