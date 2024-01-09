@@ -8,13 +8,27 @@ import os
 st.markdown(
     """
     <style>
+    body {
+        background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWi5-x1EvY3iq6DTWLttZ7-Ym0fLpXEuSR5Ctu_jPxHyI8PL7axqyt6iCajI7QuKgVqX15gaiLP_RJr-A6GNINxsRv3noZkyDBaT2pZsoW2BNdxppejifHQRZwdCExYlZLIzIPYyJ_PDJ9z_-HqGse1T_gW8f4sFW4NF5T2mI_UOjT7HCrMXMr7Vor/w1200-h630-p-k-no-nu/GDS_ASL_FingerspellingCompetition_Banners_Metacard.png");
+        background-size: cover;
+    }
     .stApp {
-        background-color: #f9f9f9;
+        background-color: rgba(0, 0, 0, 0.6);
     }
     .stButton>button {
         background-color: #feca57;
         color: #ffffff;
         font-weight: bold;
+    }
+    .file-upload-btn .label {
+        font-size: 20px;
+        color: black; 
+    }
+    .stTextArea label, .stSelectbox label, .stTextInput label {
+        color: black; 
+    }
+    .stMarkdown h1, .stMarkdown h2, .stMarkdown h3, .stMarkdown h4, .stMarkdown h5, .stMarkdown h6 {
+        color: black;
     }
     </style>
     """,
@@ -22,7 +36,7 @@ st.markdown(
 )
 
 # Custom header
-st.image("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWi5-x1EvY3iq6DTWLttZ7-Ym0fLpXEuSR5Ctu_jPxHyI8PL7axqyt6iCajI7QuKgVqX15gaiLP_RJr-A6GNINxsRv3noZkyDBaT2pZsoW2BNdxppejifHQRZwdCExYlZLIzIPYyJ_PDJ9z_-HqGse1T_gW8f4sFW4NF5T2mI_UOjT7HCrMXMr7Vor/w1200-h630-p-k-no-nu/GDS_ASL_FingerspellingCompetition_Banners_Metacard.png", use_column_width=True)
+#st.image("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWi5-x1EvY3iq6DTWLttZ7-Ym0fLpXEuSR5Ctu_jPxHyI8PL7axqyt6iCajI7QuKgVqX15gaiLP_RJr-A6GNINxsRv3noZkyDBaT2pZsoW2BNdxppejifHQRZwdCExYlZLIzIPYyJ_PDJ9z_-HqGse1T_gW8f4sFW4NF5T2mI_UOjT7HCrMXMr7Vor/w1200-h630-p-k-no-nu/GDS_ASL_FingerspellingCompetition_Banners_Metacard.png", use_column_width=True)
 st.title(":wave: Sign Language Classification Model :muscle:")
 
 # Load the pre-trained model
